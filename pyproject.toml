@@ -3,7 +3,15 @@ name = "claude-code-crash-course"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.11"
-dependencies = [
-    "pygame>=2.6.1",
+authors = [
+    { name = "Learner ShivDewangan", email = "learnershivdewangan@gmail.com" }
 ]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+claude-code-crash-course = "claude_code_crash_course:main"
+
+[build-system]
+requires = ["uv_build>=0.12.8,<0.13.0"]
+build-backend = "uv_build"

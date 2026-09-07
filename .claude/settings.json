@@ -2,11 +2,11 @@
   "hooks": {
     "Stop": [
       {
-        "matcher": "",
+        "matcher": "*",
         "hooks": [
           {
             "type": "command",
-            "command": "uv run /Users/edenmarco/GithubProjects/claude-code-crash-course/play_sound.py"
+            "command": "echo \"Hook triggered at $(date)\" >> /tmp/claude_hook_debug.log && uv run /home/shiv/claude-code-crash-course/src/claude_code_crash_course/play_sound.py"
           }
         ]
       }
